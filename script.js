@@ -5,7 +5,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const emailLink = document.getElementById("email-link");
 if (CONTACT_EMAIL && !CONTACT_EMAIL.includes("YOUR_EMAIL")) {
   emailLink.href = `mailto:${CONTACT_EMAIL}`;
-  document.querySelector(".contact-hint").textContent = "You can also reach me by email.";
+  document.querySelector(".contact-hint").textContent = "Or email me directly: " + CONTACT_EMAIL;
 }
 
 const menuButton = document.querySelector(".menu-toggle");
